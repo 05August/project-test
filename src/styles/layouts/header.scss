@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+  padding: 0 73px;
+
+  &__left {
+    &--logo {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      h1 {
+        position: absolute;
+        top: 13%;
+
+        left: 80%;
+        height: 41px;
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 41px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+
+    &--nav {
+      ul {
+        display: flex;
+
+        li {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 17px;
+          line-height: 20px;
+          text-transform: uppercase;
+          width: 110px;
+          margin-left: 22px;
+          border-bottom: 5px solid #4ba87d;
+          text-align: center;
+          height: 41px;
+          line-height: 41px;
+
+          &:last-child {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+
+    &--login {
+      width: 168px;
+      height: 41px;
+      background: #4ba87d;
+      line-height: 20px;
+      text-align: center;
+      a {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 17px;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 41px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 66px;
+    padding-left: 0px;
+    padding-right: 10px;
+    &__left {
+      &--logo {
+        img {
+          width: 84px;
+          height: 42px;
+        }
+        h1 {
+          height: 26px;
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    &__right {
+      &--nav {
+        ul {
+          li {
+            border-bottom: 3px solid #4ba87d;
+            font-size: 11px;
+            line-height: 25px;
+            height: 25px;
+            width: 71px;
+
+            &:last-child {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+
+      &--login {
+        margin-right: 16px;
+        width: 110px;
+        height: 25px;
+        background: #4ba87d;
+        line-height: 25px;
+        text-align: center;
+        a {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 11px;
+          color: #ffffff;
+          text-transform: uppercase;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 62px;
+    padding-left: 0px;
+    padding-right: 13px;
+
+    &__right {
+      &--nav {
+        display: none;
+      }
+    }
+  }
+}

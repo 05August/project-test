@@ -1,0 +1,65 @@
+.member-item {
+  width: 342px;
+  height: 239px;
+  position: relative;
+
+  background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+
+  img {
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.160784));
+  }
+
+  .name {
+    position: absolute;
+    width: 220px;
+    height: 45px;
+    left: 27px;
+    top: 153px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #ffffff;
+  }
+
+  .year {
+    position: absolute;
+    width: 266px;
+    height: 34px;
+    left: 27px;
+    top: 198px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    /* or 116% */
+
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .member-item {
+    width: 223px;
+    height: 157px;
+
+    .name {
+      font-size: 22px;
+      line-height: 26px;
+      left: 17px;
+      top: 100px;
+    }
+
+    .year {
+      font-size: 12px;
+      line-height: 14px;
+      left: 17px;
+      top: 130px;
+    }
+  }
+}
